@@ -97,6 +97,32 @@
     border-color: rgba(201, 169, 97, 0.6);
     transform: translateY(-2px);
   }
+  @media (max-width: 640px) {
+    .hero-keyword {
+      padding: 3px 10px;
+      margin: 3px 4px;
+      font-size: 0.78em;
+    }
+  }
+
+  /* Hero highlight (gradient text with fallback) */
+  .hero-highlight {
+    color: #FCD34D; /* fallback for browsers that fail gradient */
+    background: linear-gradient(135deg, #FEF3C7 0%, #FCD34D 50%, #F59E0B 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 20px rgba(252, 211, 77, 0.3);
+    font-weight: 800;
+  }
+  /* Mobile fallback: solid bright yellow */
+  @media (max-width: 640px) {
+    .hero-highlight {
+      background: none;
+      -webkit-text-fill-color: #FCD34D;
+      color: #FCD34D;
+    }
+  }
 
   /* Stats card */
   .stat-card {
@@ -316,12 +342,12 @@
     <!-- Title -->
     <h1 data-aos="fade-up" data-aos-delay="100" class="hero-title mb-6">
       <span class="block text-white/80 text-2xl md:text-3xl font-medium mb-4 tracking-wider">DATA · DESIGN · FUTURE</span>
-      <span class="block">데이터로 읽는</span>
-      <span class="block bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">패션 상품의 미래</span>
+      <span class="block text-white">데이터로 읽는</span>
+      <span class="block hero-highlight">패션 상품의 미래</span>
     </h1>
 
     <!-- Vision sentence -->
-    <p data-aos="fade-up" data-aos-delay="200" class="text-lg md:text-2xl mt-8 mb-10 text-white/90 max-w-4xl mx-auto leading-relaxed font-light">
+    <p data-aos="fade-up" data-aos-delay="200" class="text-base md:text-2xl mt-8 mb-10 text-white/90 max-w-4xl mx-auto font-light px-2" style="line-height: 2;">
       <span class="hero-keyword">글로벌</span> 거시환경의 변화를 읽고,
       <span class="hero-keyword">지속가능한</span> 리테일 생태계를 설계하며,
       <br class="hidden md:block">
