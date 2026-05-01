@@ -82,7 +82,7 @@
   .hero-keyword {
     display: inline-block;
     padding: 4px 14px;
-    margin: 0 4px;
+    margin: 4px 8px;
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 999px;
@@ -90,6 +90,7 @@
     font-weight: 600;
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
+    white-space: nowrap;
   }
   .hero-keyword:hover {
     background: rgba(201, 169, 97, 0.3);
@@ -181,6 +182,7 @@
   }
   .badge-ssci { background: #FEF3C7; color: #92400E; }
   .badge-scie { background: #DBEAFE; color: #1E3A8A; }
+  .badge-scopus { background: #FCE7F3; color: #9D174D; }
   .badge-kci { background: #E0E7FF; color: #3730A3; }
   .badge-rr { background: #FEE2E2; color: #991B1B; }
   .badge-conf { background: #D1FAE5; color: #065F46; }
@@ -344,8 +346,8 @@
         <div class="text-sm text-white/70 mt-2">SSCI/SCIE/KCI<br>1저자 논문·R&R</div>
       </div>
       <div class="stat-card rounded-2xl p-6">
-        <div class="stat-number">4.7년</div>
-        <div class="text-sm text-white/70 mt-2">롯데홈쇼핑<br>MD 실무</div>
+        <div class="stat-number">6.7년</div>
+        <div class="text-sm text-white/70 mt-2">MD 4.7년<br>+ 스타트업 CEO 2년</div>
       </div>
       <div class="stat-card rounded-2xl p-6">
         <div class="stat-number">3개</div>
@@ -450,7 +452,7 @@
       </p>
       <div class="space-y-2">
         <div class="flex items-center gap-2 text-xs text-gray-500"><i data-lucide="check-circle" class="w-3 h-3"></i> SSCI APJML 1저자</div>
-        <div class="flex items-center gap-2 text-xs text-gray-500"><i data-lucide="check-circle" class="w-3 h-3"></i> JRCS 2nd R&R · Best Paper</div>
+        <div class="flex items-center gap-2 text-xs text-gray-500"><i data-lucide="check-circle" class="w-3 h-3"></i> JRCS 2nd R&R · KMRA-JRCS Best Paper</div>
         <div class="flex items-center gap-2 text-xs text-gray-500"><i data-lucide="check-circle" class="w-3 h-3"></i> JCM 1st R&R, 교신저자</div>
       </div>
     </div>
@@ -505,10 +507,10 @@
       <div class="flex flex-wrap gap-2 mb-2">
         <span class="badge badge-rr">2nd R&R</span>
         <span class="badge badge-ssci">SSCI · 공저</span>
-        <span class="badge badge-conf">2025 Best Paper</span>
+        <span class="badge badge-conf">KMRA-JRCS Best Paper</span>
       </div>
       <h4 class="font-bold mb-1">Optimizing Sustainable Packaging</h4>
-      <p class="text-xs text-gray-500 mb-2">Journal of Retailing and Consumer Services · Fast Track</p>
+      <p class="text-xs text-gray-500 mb-2">Journal of Retailing and Consumer Services · 2025 한국유통학회 JRCS Special Session · Fast Track</p>
       <p class="text-sm text-gray-700">공유책임·소비자 효능감·메시지 프레이밍의 통합 모델</p>
     </div>
 
@@ -525,6 +527,7 @@
     <div data-aos="fade-up" data-aos-delay="150" class="pub-item">
       <div class="flex flex-wrap gap-2 mb-2">
         <span class="badge badge-rr">1st R&R</span>
+        <span class="badge badge-scopus">Scopus</span>
         <span class="badge badge-kci">KCI · 1저자</span>
       </div>
       <h4 class="font-bold mb-1">AI Agentic Commerce: 위임 소비</h4>
@@ -535,6 +538,7 @@
     <div data-aos="fade-up" data-aos-delay="200" class="pub-item">
       <div class="flex flex-wrap gap-2 mb-2">
         <span class="badge badge-rr">1st R&R</span>
+        <span class="badge badge-scopus">Scopus</span>
         <span class="badge badge-kci">KCI · 1저자</span>
       </div>
       <h4 class="font-bold mb-1">ML 기반 리뷰 유용성 예측</h4>
@@ -556,7 +560,7 @@
   <!-- Published -->
   <div class="mt-16">
     <h3 data-aos="fade-up" class="text-2xl font-bold text-center mb-8">출간 논문</h3>
-    <div class="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
       <div data-aos="fade-up" class="pub-item">
         <span class="badge badge-ssci mb-2 inline-flex">SSCI · 1저자 · 2026</span>
         <h4 class="font-bold mb-1 mt-2">Why do sellers flock to vertical fashion platforms?</h4>
@@ -568,9 +572,30 @@
         <p class="text-xs text-gray-500">Fashion and Textiles · NRF 국제공동연구</p>
       </div>
       <div data-aos="fade-up" data-aos-delay="200" class="pub-item">
+        <span class="badge badge-kci mb-2 inline-flex">KCI · 교신 · 2025</span>
+        <h4 class="font-bold mb-1 mt-2">K-뷰티 유튜브 콘텐츠의 언어적 특성과 글로벌 소비자 감정 반응</h4>
+        <p class="text-xs text-gray-500">한국지역사회생활과학회지 · LIWC 텍스트마이닝</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300" class="pub-item">
+        <span class="badge badge-kci mb-2 inline-flex">KCI · 1저자 · 2024</span>
+        <h4 class="font-bold mb-1 mt-2">Trajectory of K-Beauty through Vietnamese Influencers</h4>
+        <p class="text-xs text-gray-500">Journal of Fashion Business · NRF 국제공동연구</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="400" class="pub-item">
+        <span class="badge badge-kci mb-2 inline-flex">KCI · 단독 1저자 · 2024</span>
+        <h4 class="font-bold mb-1 mt-2">A Decade of Shifting Consumer Laundry Needs Through Text Mining</h4>
+        <p class="text-xs text-gray-500">Journal of Fashion Business · 10년 소셜 빅데이터 분석</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="500" class="pub-item">
         <span class="badge badge-kci mb-2 inline-flex">KCI · 1저자 · 2022</span>
         <h4 class="font-bold mb-1 mt-2">포스트 팬데믹 중고 패션 소비 인식</h4>
         <p class="text-xs text-gray-500">한국의류산업학회지 · LDA 토픽모델링</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="600" class="pub-item">
+        <span class="badge badge-scopus mb-2 inline-flex mr-1">Scopus</span>
+        <span class="badge badge-kci mb-2 inline-flex">KCI · 공저 · 2022</span>
+        <h4 class="font-bold mb-1 mt-2">베트남 MZ세대의 다차원적 소비가치에 대한 연구</h4>
+        <p class="text-xs text-gray-500">Journal of the Korean Society of Clothing and Textiles · NRF 국제공동연구</p>
       </div>
     </div>
   </div>
@@ -651,12 +676,30 @@
 <!-- ============== PROJECTS ============== -->
 <section id="projects" class="section">
   <div class="text-center mb-16">
-    <span data-aos="fade-up" class="section-label">INDUSTRY PROJECTS</span>
-    <h2 data-aos="fade-up" data-aos-delay="100" class="section-title">산학 프로젝트 & 오픈소스</h2>
+    <span data-aos="fade-up" class="section-label">INDUSTRY EXPERIENCE</span>
+    <h2 data-aos="fade-up" data-aos-delay="100" class="section-title">실무·산학 경력 & 오픈소스</h2>
   </div>
 
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
     <div data-aos="fade-up" class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-xl transition">
+      <div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center mb-4">
+        <i data-lucide="tv" class="w-6 h-6 text-rose-600"></i>
+      </div>
+      <h3 class="font-bold mb-2">롯데홈쇼핑 MD</h3>
+      <p class="text-xs text-gray-500 mb-3">2014~2018 · 4년 7개월</p>
+      <p class="text-sm text-gray-700">라이브 TV MD(레포츠·스포츠·골프·남성) → EC 패션팀 온라인 MD(신발·디자이너 브랜드)</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="50" class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-xl transition">
+      <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+        <i data-lucide="rocket" class="w-6 h-6 text-amber-600"></i>
+      </div>
+      <h3 class="font-bold mb-2">쇼캐스트 창업자 · CEO</h3>
+      <p class="text-xs text-gray-500 mb-3">2018~2020 · 2년</p>
+      <p class="text-sm text-gray-700">모바일 라이브커머스 스타트업 창립 — 패션·뷰티 라이브 커머스 시장 초기 진입 경험</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-xl transition">
       <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
         <i data-lucide="shopping-bag" class="w-6 h-6 text-purple-600"></i>
       </div>
@@ -665,7 +708,7 @@
       <p class="text-sm text-gray-700">패션 버티컬 플랫폼-셀러 공진화 모델 → SSCI APJML 게재 (2026)</p>
     </div>
 
-    <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-xl transition">
+    <div data-aos="fade-up" data-aos-delay="150" class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-xl transition">
       <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
         <i data-lucide="layers" class="w-6 h-6 text-blue-600"></i>
       </div>
@@ -711,28 +754,23 @@
     <h2 data-aos="fade-up" data-aos-delay="100" class="section-title">강의 경력</h2>
   </div>
 
-  <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
     <div data-aos="zoom-in" class="bg-white p-5 rounded-xl border border-gray-100 text-center">
-      <div class="font-bold text-blue-700 mb-1">한양대학교</div>
-      <div class="text-xs text-gray-500 mb-2">2026</div>
-      <div class="text-sm">상품개발론<br>(Design for Value)</div>
-    </div>
-    <div data-aos="zoom-in" data-aos-delay="100" class="bg-white p-5 rounded-xl border border-gray-100 text-center">
       <div class="font-bold text-blue-700 mb-1">인천대학교</div>
       <div class="text-xs text-gray-500 mb-2">2026</div>
       <div class="text-sm">상품개발론<br>(소비자학과)</div>
     </div>
-    <div data-aos="zoom-in" data-aos-delay="200" class="bg-white p-5 rounded-xl border border-gray-100 text-center">
+    <div data-aos="zoom-in" data-aos-delay="100" class="bg-white p-5 rounded-xl border border-gray-100 text-center">
       <div class="font-bold text-blue-700 mb-1">동의대학교</div>
       <div class="text-xs text-gray-500 mb-2">2025</div>
-      <div class="text-sm">글로벌 패션마케팅</div>
+      <div class="text-sm">글로벌 패션마케팅<br>패션마케팅</div>
     </div>
-    <div data-aos="zoom-in" data-aos-delay="300" class="bg-white p-5 rounded-xl border border-gray-100 text-center">
+    <div data-aos="zoom-in" data-aos-delay="200" class="bg-white p-5 rounded-xl border border-gray-100 text-center">
       <div class="font-bold text-blue-700 mb-1">서울대학교</div>
       <div class="text-xs text-gray-500 mb-2">2024~2025</div>
-      <div class="text-sm">고급의류학방법론</div>
+      <div class="text-sm">고급의류학방법론<br>패션마케팅</div>
     </div>
-    <div data-aos="zoom-in" data-aos-delay="400" class="bg-white p-5 rounded-xl border border-gray-100 text-center">
+    <div data-aos="zoom-in" data-aos-delay="300" class="bg-white p-5 rounded-xl border border-gray-100 text-center">
       <div class="font-bold text-blue-700 mb-1">세종대학교</div>
       <div class="text-xs text-gray-500 mb-2">2024</div>
       <div class="text-sm">빅데이터와<br>패션마케팅 연구</div>
@@ -745,25 +783,30 @@
   <div data-aos="fade-up">
     <span class="section-label">CONTACT</span>
     <h2 class="section-title">함께 연구할 미래</h2>
-    <p class="text-gray-600 text-lg mb-10">
-      국립순천대학교 의류상품학 분야 교수임용 지원자<br>
-      <span class="text-sm">2026-2학기 임용 (지원 마감: 2026.05.07)</span>
-    </p>
 
-    <div class="flex flex-wrap justify-center gap-3 mb-12">
+    <div class="flex flex-wrap justify-center gap-3 mb-8">
       <a href="mailto:with.habin@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-blue-700 transition">
         <i data-lucide="mail" class="w-4 h-4"></i> with.habin@gmail.com
+      </a>
+      <a href="https://scholar.google.com/citations?user=xRjwgz4AAAAJ&hl=ko&oi=ao" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-gray-200 rounded-full font-medium hover:border-blue-700 hover:text-blue-700 transition">
+        <i data-lucide="graduation-cap" class="w-4 h-4"></i> Google Scholar
+      </a>
+      <a href="https://orcid.org/0000-0003-1480-6323" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-gray-200 rounded-full font-medium hover:border-green-700 hover:text-green-700 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.713 0 5.344 2.65 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.281-3.722-4.097-3.722h-2.222z"/></svg>
+        ORCID
       </a>
       <a href="https://pypi.org/project/fair-rec-sys/" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-gray-200 rounded-full font-medium hover:border-blue-700 hover:text-blue-700 transition">
         <i data-lucide="package" class="w-4 h-4"></i> PyPI
       </a>
-      <a href="https://scholar.google.com/" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-gray-200 rounded-full font-medium hover:border-blue-700 hover:text-blue-700 transition">
-        <i data-lucide="graduation-cap" class="w-4 h-4"></i> Google Scholar
-      </a>
     </div>
 
-    <div class="text-xs text-gray-400 mt-16 pt-8 border-t border-gray-100 max-w-4xl mx-auto">
-      © 2026 Habin Kim · Research Portfolio · Built for SCNU Faculty Application
+    <div class="text-xs text-gray-500 mb-12">
+      <code class="bg-gray-100 px-3 py-1.5 rounded-md">ORCID iD: 0000-0003-1480-6323</code>
+    </div>
+
+    <div class="text-xs text-gray-400 mt-12 pt-8 border-t border-gray-100 max-w-4xl mx-auto">
+      © 2026 Habin Kim · Research Portfolio<br>
+      <span class="text-gray-300">Last updated: May 1, 2026</span>
     </div>
   </div>
 </section>
