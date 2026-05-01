@@ -39,6 +39,16 @@
     background-clip: text;
   }
 
+  .nav-logo {
+    color: #EAB308;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    transition: color 0.3s ease;
+  }
+  .nav-logo:hover {
+    color: #F59E0B;
+  }
+
   .gradient-bg {
     background: linear-gradient(135deg, #0F2A47 0%, #1A3C6E 50%, #2B579A 100%);
   }
@@ -105,23 +115,12 @@
     }
   }
 
-  /* Hero highlight (gradient text with fallback) */
+  /* Hero highlight - vivid yellow */
   .hero-highlight {
-    color: #FCD34D; /* fallback for browsers that fail gradient */
-    background: linear-gradient(135deg, #FEF3C7 0%, #FCD34D 50%, #F59E0B 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 2px 20px rgba(252, 211, 77, 0.3);
+    color: #FFEB3B;
+    -webkit-text-fill-color: #FFEB3B;
+    text-shadow: 0 2px 24px rgba(255, 235, 59, 0.5);
     font-weight: 800;
-  }
-  /* Mobile fallback: solid bright yellow */
-  @media (max-width: 640px) {
-    .hero-highlight {
-      background: none;
-      -webkit-text-fill-color: #FCD34D;
-      color: #FCD34D;
-    }
   }
 
   /* Stats card */
@@ -140,10 +139,29 @@
   .stat-number {
     font-size: 3rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #FFFFFF 0%, #C9A961 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #FFFFFF;
+    -webkit-text-fill-color: #FFFFFF;
     line-height: 1;
+  }
+  @media (max-width: 640px) {
+    .stat-number {
+      font-size: 2.5rem;
+    }
+  }
+
+  /* Sejong Fellowship: vivid yellow stat numbers */
+  .stat-number-gold {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #FFEB3B;
+    -webkit-text-fill-color: #FFEB3B;
+    line-height: 1;
+    text-shadow: 0 2px 24px rgba(255, 235, 59, 0.5);
+  }
+  @media (max-width: 640px) {
+    .stat-number-gold {
+      font-size: 2.5rem;
+    }
   }
 
   /* Research axis card */
@@ -309,7 +327,7 @@
 <!-- ============== NAV ============== -->
 <nav class="px-6 py-4">
   <div class="max-w-7xl mx-auto flex items-center justify-between">
-    <a href="#hero" class="font-bold text-lg gradient-text">Habin Kim</a>
+    <a href="#hero" class="font-bold text-lg nav-logo">Habin Kim</a>
     <div class="hidden md:flex gap-8 text-sm font-medium text-gray-700">
       <a href="#vision">Vision</a>
       <a href="#research">Research</a>
@@ -649,19 +667,19 @@
     <!-- Stats -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-16">
       <div data-aos="fade-up" class="stat-card rounded-2xl p-6 text-center">
-        <div class="stat-number">5억</div>
+        <div class="stat-number-gold">5억</div>
         <div class="text-sm text-white/70 mt-2">총 연구비</div>
       </div>
       <div data-aos="fade-up" data-aos-delay="100" class="stat-card rounded-2xl p-6 text-center">
-        <div class="stat-number">5년</div>
+        <div class="stat-number-gold">5년</div>
         <div class="text-sm text-white/70 mt-2">연구 기간</div>
       </div>
       <div data-aos="fade-up" data-aos-delay="200" class="stat-card rounded-2xl p-6 text-center">
-        <div class="stat-number">PI</div>
+        <div class="stat-number-gold">PI</div>
         <div class="text-sm text-white/70 mt-2">독립 연구 책임자</div>
       </div>
       <div data-aos="fade-up" data-aos-delay="300" class="stat-card rounded-2xl p-6 text-center">
-        <div class="stat-number">국내</div>
+        <div class="stat-number-gold">국내</div>
         <div class="text-sm text-white/70 mt-2">트랙 선정</div>
       </div>
     </div>
